@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/functions.js" async=true>   </script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="addEmail">
+            <label> Email: <input type="email" name="email" id="email" required /> </label>
+            <button class="addRow" onclick="addRow();">Add</button><br /><br />
+        </div>
+        <div class="emailTable">
+            <!-- <input type="text" id="searchBar" onkeyup="searchEmailListTable()" placeholder="Search for Email Id's"> -->
+            <input type="text" id="searchBar" placeholder="Search" name="search">
+            <button id="searchGoButton" onclick="searchEmailListTable()" type="submit">GO</button>
+            <h4> Show Only Enabled <input id="showEnabled" onclick="displayChecked()" type="checkbox" name="check"
+                    value="">
+            </h4>
+
+            <table id="emailListTable" border="1">
+                <tr>
+                    <th>Is Enabled</th>
+                    <th>Email</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <td><input id="isEnabledCheck" type="checkbox" name="isEnabledCheck"></td>
+                    <td>testuser@media.net</td>
+                    <td><button onclick="deleteRow(this)" class="delete"><i class="fa fa-trash"></i></button></td>
+                </tr>
+                <tr>
+                    <td><input id="isEnabledCheck" type="checkbox" name="isEnabledCheck"></td>
+                    <td>abc@gmail.net</td>
+                    <td><button onclick="deleteRow(this)" class="delete"><i class="fa fa-trash"></i></button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

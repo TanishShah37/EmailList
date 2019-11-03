@@ -1,0 +1,112 @@
+#searchBar {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 40px;
+}
+
+#emailListTable {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#emailListTable th,
+#emailListTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#emailListTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#emailListTable tr.header,
+#emailListTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete {
+    font-size: 24px;
+    outline: 0;
+    border: none;
+    background: none;
+}
+
+.checkbox {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.addRow {
+    background-color:#2196F3;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=email],
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.addEmail {
+    width: 45%;
+    float: left;
+    margin: 25px;
+}
+
+.emailTable {
+    width: 45%;
+    float: right;
+    margin: 40px;
+}
+
+.wrapper {
+    border: 1px solid #ccc;
+    width: 100vw;
+    height: 400px;
+    margin: 10px;
+}
+
+#searchGoButton {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    outline:0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 7px;
+}
+
+h4{
+    width: 30%;
+    margin:20px 0;
+}
